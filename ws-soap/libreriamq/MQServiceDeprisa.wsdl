@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="MQServiceDeprisa" targetNamespace="http://MQServiceDeprisa" xmlns:wmqservice="http://www.ibm.com/xmlns/prod/wmq/bindings/1.0" xmlns:tns="http://MQServiceDeprisa" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:documentation><wsdl:appinfo source="WMQI_APPINFO"><MRWSDLAppInfo imported="true"><generatedXSD location="MQServiceDeprisa_InlineSchema.xsd"/><binding hasEncoding="false" imported="true" name="MQServiceDeprisa_Wmq_Binding" originalBindingStyle="document"/></MRWSDLAppInfo></wsdl:appinfo></wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://MQServiceDeprisa">
+      <xsd:include schemaLocation="MQServiceDeprisa_InlineSchema.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DEPRISAOUTQUEUE_Operation_Input">
+    <wsdl:part name="DEPRISAOUTQUEUE_Operation_Input_Part" element="tns:DEPRISAOUTQUEUE_Operation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MQServiceDeprisa">
+    <wsdl:operation name="DEPRISAOUTQUEUE_Operation">
+      <wsdl:input message="tns:DEPRISAOUTQUEUE_Operation_Input">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MQServiceDeprisa_Wmq_Binding" type="tns:MQServiceDeprisa">
+    <wmqservice:binding/>
+    <wsdl:operation name="DEPRISAOUTQUEUE_Operation">
+      <wsdl:input>
+        <wmqservice:body/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MQServiceDeprisa">
+    <wsdl:port name="MQServiceDeprisa_Wmq_Port" binding="tns:MQServiceDeprisa_Wmq_Binding">
+      <wmqservice:address location="wmq:/msg/queue/DEPRISA.OUT.QUEUE"/>
+      <wmqservice:connectQueueManager>QM1</wmqservice:connectQueueManager>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

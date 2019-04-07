@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageBroker name="libreriamq">
+  <XSDCollection
+    href="platform:/resource/libreriamq/MQService1_InlineSchema.xsd"
+    prefix="" targetNamespace="http://MQService1">
+    <element
+      href="platform:/resource/libreriamq/MQService1_InlineSchema.xsd#//cola1_Operation;XSDElementDeclaration" name="cola1_Operation"/>
+  </XSDCollection>
+</MessageBroker>

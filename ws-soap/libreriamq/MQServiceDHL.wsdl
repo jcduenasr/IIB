@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="MQServiceDHL" targetNamespace="http://MQServiceDHL" xmlns:wmqservice="http://www.ibm.com/xmlns/prod/wmq/bindings/1.0" xmlns:tns="http://MQServiceDHL" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:documentation><wsdl:appinfo source="WMQI_APPINFO"><MRWSDLAppInfo imported="true"><generatedXSD location="MQServiceDHL_InlineSchema.xsd"/><binding hasEncoding="false" imported="true" name="MQServiceDHL_Wmq_Binding" originalBindingStyle="document"/></MRWSDLAppInfo></wsdl:appinfo></wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://MQServiceDHL">
+      <xsd:include schemaLocation="MQServiceDHL_InlineSchema.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DHLOUTQUEUE_Operation_Input">
+    <wsdl:part name="DHLOUTQUEUE_Operation_Input_Part" element="tns:DHLOUTQUEUE_Operation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MQServiceDHL">
+    <wsdl:operation name="DHLOUTQUEUE_Operation">
+      <wsdl:input message="tns:DHLOUTQUEUE_Operation_Input">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MQServiceDHL_Wmq_Binding" type="tns:MQServiceDHL">
+    <wmqservice:binding/>
+    <wsdl:operation name="DHLOUTQUEUE_Operation">
+      <wsdl:input>
+        <wmqservice:body/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MQServiceDHL">
+    <wsdl:port name="MQServiceDHL_Wmq_Port" binding="tns:MQServiceDHL_Wmq_Binding">
+      <wmqservice:address location="wmq:/msg/queue/DHL.OUT.QUEUE"/>
+      <wmqservice:connectQueueManager>QM1</wmqservice:connectQueueManager>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

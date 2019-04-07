@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="OrdenManagement" targetNamespace="http://www.example.org/OrdenManagement/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.example.org/OrdenManagement/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="OrdenManagementSOAP" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  
+	<wsdl:types>
+		
+        	<xsd:schema targetNamespace="http://www.example.org/OrdenManagement/" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+<xsd:include schemaLocation="OrdenManagement_InlineSchema1.xsd"/>
+    </xsd:schema>
+    </wsdl:types>
+	<wsdl:message name="createOrderRequest">
+		<wsdl:part element="tns:createOrder" name="parameters"/>
+	</wsdl:message>
+	<wsdl:message name="createOrderResponse">
+		<wsdl:part element="tns:createOrderResponse" name="parameters"/>
+	</wsdl:message>
+	<wsdl:portType name="OrdenManagement">
+		<wsdl:operation name="createOrder">
+			<wsdl:input message="tns:createOrderRequest"/>
+			<wsdl:output message="tns:createOrderResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="OrdenManagementSOAP" type="tns:OrdenManagement">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="createOrder">
+			<soap:operation soapAction="http://www.example.org/OrdenManagement/createOrder"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="OrdenManagement">
+		<wsdl:port binding="tns:OrdenManagementSOAP" name="OrdenManagementSOAP">
+			<soap:address location="http://www.example.org/"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

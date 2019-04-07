@@ -1,0 +1,13 @@
+
+
+Se está importando el archivo: C:\Users\jcduenasr\IBM\IIBT10\ws-soap\SoapIntegrationService\SoapIntegrationService.wsdl
+
+La importación de WSDL proseguirá con los enlaces SoapIntegrationServiceHttpBinding.
+Creando documento de esquema wsdl para platform:/resource/SoapIntegrationService/SoapIntegrationService.wsdl.
+Parsing wsdl binding {http://SoapIntegrationService}SoapIntegrationServiceHttpBinding.
+Parsing wsdl binding input getEmployeeDetails.
+Parsing wsdl binding output getEmployeeDetails.
+Processing doc style for operation getEmployeeDetails.
+Populating WSDL schema SoapIntegrationService.xsd.
+Creando archivo SoapIntegrationService.xsd en el espacio de trabajo.
+Copiando WSDL origen SoapIntegrationService.wsdl en SoapIntegrationService.wsdl.

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="select_external_locations">
+		<item value="http://desktop-ju9jn08:8088/mockOrdenManagementSOAP?WSDL"/>
+		<item value="C:\Users\jcduenasr\Downloads\tallerSOA\OrdenManagement.wsdl"/>
+	</list>
+</section>

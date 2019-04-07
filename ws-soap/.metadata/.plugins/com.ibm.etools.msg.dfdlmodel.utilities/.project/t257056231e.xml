@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageBroker name="libreriamq">
+  <XSDCollection
+    href="platform:/resource/libreriamq/MQService_InlineSchema.xsd"
+    prefix="" targetNamespace="http://MQService">
+    <element
+      href="platform:/resource/libreriamq/MQService_InlineSchema.xsd#//AUDITORIA_Operation;XSDElementDeclaration" name="AUDITORIA_Operation"/>
+  </XSDCollection>
+</MessageBroker>

@@ -1,0 +1,48 @@
+Resumen de selecciones: Generación de archivos WSDL
+
+El conjunto de mensajes seleccionado:
+/calculator_msp/calculator_ms
+
+Los archivos WSDL generados se colocarán en:
+/calculator_msp
+
+La versión de WSDL que se va a generar: 1.1
+La versión de SOAP que se va a generar: 1.1
+
+El estilo seleccionado para la generación de WSDL: document
+El espacio de nombres de WSDL: http://tempuri.org/calculator_ms
+
+Se crearán las operaciones siguientes:
+Addition (Solicitud-Respuesta)
+
+Se han seleccionado los siguientes enlaces:
+SOAP over http.
+
+Se generarán los archivos WSDL siguientes:
+/calculator_msp/calculator_msService.wsdl
+
+
+Creando archivo de servicio WSDL nuevo '\calculator_msp\calculator_msService.wsdl'
+Estableciendo la definición de nombre wsdl para 'calculator_msService.wsdl': calculator_ms
+Estableciendo la definición wsdl targetNamespace para 'calculator_msService.wsdl': http://tempuri.org/calculator_ms
+Añadiendo espacio de nombres: xmlns para 'calculator_msService.wsdl':soap=http://schemas.xmlsoap.org/wsdl/soap/
+Añadiendo espacio de nombres: xmlns para 'calculator_msService.wsdl':xsd=http://www.w3.org/2001/XMLSchema
+Añadiendo espacio de nombres: xmlns para 'calculator_msService.wsdl':wsdl=http://schemas.xmlsoap.org/wsdl/
+Creando archivo de interfaz WSDL nuevo '\calculator_msp\calculator_msService.wsdl'
+Se está creando el tipo de puerto para la interfaz WSDL: calculator_msPortType
+Se está creando la operación portType 'Addition'
+Se está creando el mensaje 'Addition_in'
+Se está creando el mensaje 'Addition_out'
+Se está creando el mensaje 'Addition_fault1'
+Creando el enlace de SOAP a través de HTTP 'calculator_msSOAP_HTTP_Binding'
+Creando la operación de enlace 'Addition' para enlazar 'calculator_msSOAP_HTTP_Binding'
+Creando el servicio de SOAP a través de HTTP 'calculator_msSOAP_HTTP_Service'
+Creando el puerto 'calculator_msSOAP_HTTP_Port' para el servicio 'calculator_msSOAP_HTTP_Service'
+
+Tiempo transcurrido en el proceso de esta definición WSDL: 1.551209033955E9 segundos
+Número de avisos para esta definición WSDL: 0
+
+
+Número de archivos procesados: 1
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="gen" version="8.0.5.0" xmlns:map="gen">
+    <input path="/SoapIntegrationService_InlineSchema1.xsd"/>
+    <output path="/TestSoapIntegration.xsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="in" uri="http://SoapIntegrationService"/>
+        <namespace kind="supplement" prefix="io" uri="http://www.example.org/TestSoapIntegration"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="getEmployeeDetails_Request_Response_Mapping">
+        <input namespace="http://SoapIntegrationService" path="mb:msg(getEmployeeDetails,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_getEmployeeDetails"/>
+        <output namespace="http://www.example.org/TestSoapIntegration" path="mb:msg(EmployeeResponse,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_EmployeeResponse"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_getEmployeeDetails/Properties"/>
+            <output path="$ComIbmMessageAssembly_EmployeeResponse/Properties"/>
+        </move>
+        <move>
+            <input path="$ComIbmMessageAssembly_getEmployeeDetails/getEmployeeDetails/EmployeeRequest/id"/>
+            <output path="$ComIbmMessageAssembly_EmployeeResponse/EmployeeResponse/id"/>
+        </move>
+        <assign value="Bogotá">
+            <output path="$ComIbmMessageAssembly_EmployeeResponse/EmployeeResponse/city"/>
+        </assign>
+        <assign value="Juan C Dueñas R">
+            <output path="$ComIbmMessageAssembly_EmployeeResponse/EmployeeResponse/name"/>
+        </assign>
+    </mappingDeclaration>
+</mappingRoot>

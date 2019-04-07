@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/OrdenManagement/" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.example.org/OrdenManagement/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+			<xsd:element ibmSchExtn:docRoot="true" name="createOrder">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="OrderId" type="xsd:string"/>
+
+						<xsd:element name="country" type="xsd:string"/>
+						<xsd:element name="city" type="xsd:string"/>
+						<xsd:element name="region" type="xsd:string"/>
+
+						<xsd:element name="itemName" type="xsd:string"/>
+						<xsd:element name="quantity" type="xsd:int"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element ibmSchExtn:docRoot="true" name="createOrderResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:complexType name="elementos">
+				<xsd:sequence>
+					<xsd:element name="cantidad" type="xsd:string"/>
+					<xsd:element name="UOM" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+					</xsd:schema>

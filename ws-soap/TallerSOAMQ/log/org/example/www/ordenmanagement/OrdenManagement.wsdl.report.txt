@@ -1,0 +1,22 @@
+
+
+Se está importando el archivo: C:\Users\jcduenasr\Downloads\tallerSOA\OrdenManagement.wsdl
+
+La importación de WSDL proseguirá con los enlaces OrdenManagementSOAP.
+Creando documento de esquema wsdl para file:///C:/Users/jcduenasr/Downloads/tallerSOA/OrdenManagement.wsdl.
+Parsing wsdl binding {http://www.example.org/OrdenManagement/}OrdenManagementSOAP.
+Parsing wsdl binding input createOrder.
+Parsing wsdl binding output createOrder.
+Processing doc style for operation createOrder.
+Populating WSDL schema OrdenManagement.xsd.
+Creando archivo OrdenManagement.xsd en el espacio de trabajo.
+Creando archivo /TallerSOAMQ/OrdenManagement_InlineSchema1.xsd en el espacio de trabajo.
+Copiando WSDL origen OrdenManagement.wsdl en OrdenManagement.wsdl.
+
+Tiempo transcurrido para procesar este archivo de definición de mensajes: 0.749 segundos
+Número de avisos para este archivo de definición de mensajes: 0
+
+
+Número de archivos procesados: 1
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessagePool xmlns="http://wwww.ibm.com/iib/test/1.0.0">
+    <SOAPInputMessage WSDL_URI="platform:/resource/TallerSOAMQ/OrdenManagement.wsdl" WSDL_OPERATION_NAME="createOrder" timestamp="1552692493631" nodeId="FCMComposite_1_1" name="new message 1" id="1552692493631-537">
+        <plainText>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tns0:Envelope xmlns:tns0=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tns1=&quot;http://www.example.org/OrdenManagement/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xD;
+  &lt;tns0:Header/&gt;&#xD;
+  &lt;tns0:Body&gt;&#xD;
+    &lt;tns1:createOrder&gt;&#xD;
+      &lt;OrderId&gt;1111&lt;/OrderId&gt;&#xD;
+         &lt;country&gt;CO&lt;/country&gt;&#xD;
+         &lt;city&gt;BOG&lt;/city&gt;&#xD;
+         &lt;region&gt;ASD&lt;/region&gt;&#xD;
+         &lt;itemName&gt;QWERTY&lt;/itemName&gt;&#xD;
+         &lt;quantity&gt;5&lt;/quantity&gt;&#xD;
+&#xD;
+    &lt;/tns1:createOrder&gt;&#xD;
+  &lt;/tns0:Body&gt;&#xD;
+&lt;/tns0:Envelope&gt;</plainText>
+    </SOAPInputMessage>
+</MessagePool>

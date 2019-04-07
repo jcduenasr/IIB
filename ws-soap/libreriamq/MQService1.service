@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:services xmlns:ns2="http://com.ibm.etools.mft.service">
+    <ns2:service name="MQService1" wsdlFileName="MQService1.wsdl" portType="MQService1">
+        <ns2:operations>
+            <ns2:operation name="cola1_Operation"/>
+        </ns2:operations>
+        <ns2:policies>
+            <ns2:policy name="MQService1ConnectionPolicy" location="/apiv1/policy/MQEndpoint/MQService1ConnectionPolicy"/>
+        </ns2:policies>
+        <ns2:metadata>
+            <discovery>
+                <discoveryConnection>
+                    <mqConnectionDetails>
+                        <mqConnectionType>LOCAL</mqConnectionType>
+                        <queueManagerName>QM1</queueManagerName>
+                        <queueManagerHost>localhost</queueManagerHost>
+                        <listenerPort>1414</listenerPort>
+                        <channelName>SYSTEM.BKR.CONFIG</channelName>
+                    </mqConnectionDetails>
+                </discoveryConnection>
+                <runtimeConnection>
+                    <InputMessageHeaderProperties/>
+                </runtimeConnection>
+                <filterProperties>
+                    <messageFormatProperties>
+                        <messageExchangePattern>One-Way</messageExchangePattern>
+                    </messageFormatProperties>
+                </filterProperties>
+                <selectedObjects>
+                    <Queue>
+                        <id>cola1</id>
+                        <nodeName>cola1</nodeName>
+                        <input>true</input>
+                    </Queue>
+                </selectedObjects>
+                <selection>
+                    <selectionProperties>
+                        <interfaceProperties>
+                            <portTypeName>MQService1</portTypeName>
+                            <nsProperty>http://MQService1</nsProperty>
+                            <defaultMessageConfig>type</defaultMessageConfig>
+                        </interfaceProperties>
+                        <serviceOperationProperties>
+                            <ServiceOperationName>cola1_Operation</ServiceOperationName>
+                        </serviceOperationProperties>
+                        <InputMessageProperties>
+                            <inputMessageName>string</inputMessageName>
+                            <inputMessageNamespace>http://www.w3.org/2001/XMLSchema</inputMessageNamespace>
+                            <inputMessageType>type</inputMessageType>
+                        </InputMessageProperties>
+                    </selectionProperties>
+                </selection>
+                <outputProperties/>
+            </discovery>
+        </ns2:metadata>
+        <ns2:connectors>
+            <ns2:connector binding="com/ibm/mft/connector/mq:MQConnector" version="1.0.0" location="MQService1.wsdl"/>
+        </ns2:connectors>
+        <ns2:dataTypes>
+            <ns2:dataType name="" location="MQService1_InlineSchema.xsd"/>
+        </ns2:dataTypes>
+    </ns2:service>
+</ns2:services>

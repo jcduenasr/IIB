@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pluginspace>
+<plugin id="MQTTNodes" version="1.1.0.v20150313-1900"/>
+<plugin id="com.ibm.etools.mft.mapping.codegen.esql" version="10.0.0.v20150313-1900"/>
+</pluginspace>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="MQServiceServi" targetNamespace="http://MQServiceServi" xmlns:wmqservice="http://www.ibm.com/xmlns/prod/wmq/bindings/1.0" xmlns:tns="http://MQServiceServi" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:documentation><wsdl:appinfo source="WMQI_APPINFO"><MRWSDLAppInfo imported="true"><generatedXSD location="MQServiceServi_InlineSchema.xsd"/><binding hasEncoding="false" imported="true" name="MQServiceServi_Wmq_Binding" originalBindingStyle="document"/></MRWSDLAppInfo></wsdl:appinfo></wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://MQServiceServi">
+      <xsd:include schemaLocation="MQServiceServi_InlineSchema.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SERVIENTREGAOUTQUEUE_Operation_Input">
+    <wsdl:part name="SERVIENTREGAOUTQUEUE_Operation_Input_Part" element="tns:SERVIENTREGAOUTQUEUE_Operation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MQServiceServi">
+    <wsdl:operation name="SERVIENTREGAOUTQUEUE_Operation">
+      <wsdl:input message="tns:SERVIENTREGAOUTQUEUE_Operation_Input">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MQServiceServi_Wmq_Binding" type="tns:MQServiceServi">
+    <wmqservice:binding/>
+    <wsdl:operation name="SERVIENTREGAOUTQUEUE_Operation">
+      <wsdl:input>
+        <wmqservice:body/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MQServiceServi">
+    <wsdl:port name="MQServiceServi_Wmq_Port" binding="tns:MQServiceServi_Wmq_Binding">
+      <wmqservice:address location="wmq:/msg/queue/SERVIENTREGA.OUT.QUEUE"/>
+      <wmqservice:connectQueueManager>QM1</wmqservice:connectQueueManager>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
