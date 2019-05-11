@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageBroker name="libreriamq">
+  <XSDCollection
+    href="platform:/resource/libreriamq/MQServiceDHL_InlineSchema.xsd"
+    prefix="" targetNamespace="http://MQServiceDHL">
+    <element
+      href="platform:/resource/libreriamq/MQServiceDHL_InlineSchema.xsd#//DHLOUTQUEUE_Operation;XSDElementDeclaration" name="DHLOUTQUEUE_Operation"/>
+  </XSDCollection>
+  <XSDCollection
+    href="platform:/resource/libreriamq/MQServiceDeprisa_InlineSchema.xsd"
+    prefix="" targetNamespace="http://MQServiceDeprisa">
+    <element
+      href="platform:/resource/libreriamq/MQServiceDeprisa_InlineSchema.xsd#//DEPRISAOUTQUEUE_Operation;XSDElementDeclaration" name="DEPRISAOUTQUEUE_Operation"/>
+  </XSDCollection>
+  <XSDCollection
+    href="platform:/resource/libreriamq/MQServiceServi_InlineSchema.xsd"
+    prefix="" targetNamespace="http://MQServiceServi">
+    <element
+      href="platform:/resource/libreriamq/MQServiceServi_InlineSchema.xsd#//SERVIENTREGAOUTQUEUE_Operation;XSDElementDeclaration" name="SERVIENTREGAOUTQUEUE_Operation"/>
+  </XSDCollection>
+  <XSDCollection
+    href="platform:/resource/libreriamq/MQService1_InlineSchema.xsd"
+    prefix="" targetNamespace="http://MQService1">
+    <element
+      href="platform:/resource/libreriamq/MQService1_InlineSchema.xsd#//cola1_Operation;XSDElementDeclaration" name="cola1_Operation"/>
+  </XSDCollection>
+  <XSDCollection
+    href="platform:/resource/libreriamq/MQService3_InlineSchema.xsd"
+    prefix="" targetNamespace="http://MQService3">
+    <element
+      href="platform:/resource/libreriamq/MQService3_InlineSchema.xsd#//AUDITORIA_Operation;XSDElementDeclaration" name="AUDITORIA_Operation"/>
+  </XSDCollection>
+</MessageBroker>

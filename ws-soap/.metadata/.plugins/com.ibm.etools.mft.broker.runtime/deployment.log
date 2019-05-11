@@ -36,3 +36,34 @@ HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554149378417
 2871<<Administration Result<<2019-04-01 15:09:39.516 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
 HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554154971142
 2871<<Administration Result<<2019-04-01 16:42:54.178 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554682041852
+2871<<Administration Result<<2019-04-07 19:07:28.292 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554682131200
+2871<<Administration Result<<2019-04-07 19:08:54.931 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554682181918
+2871<<Administration Result<<2019-04-07 19:09:46.361 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554682208599
+2871<<Administration Result<<2019-04-07 19:10:13.060 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554682338974
+2871<<Administration Result<<2019-04-07 19:12:24.731 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554682375406
+2871<<Administration Result<<2019-04-07 19:13:01.078 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1554684697880
+2871<<Administration Result<<2019-04-07 19:51:43.293 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>2>>1557589617587
+2087<<Runtime Response<<2019-05-11 10:47:02.906 COT<<TESTNODE_jcduenasr<<1e61729b-58be-4079-a70e-bf843342f3a9
+4041<<Runtime Response<<2019-05-11 10:47:02.907 COT<<default<<933de532-9a39-4448-96b4-d97369bdbe22
+2211<<Runtime Response<<2019-05-11 10:47:02.907 COT<<URLSpecifier<<192.168.1.196:8086/pica/integrations/hotels/31/rooms<<http://host[:port][/path]<<getHotelsRooms.HTTP Request
+2871<<Administration Result<<2019-05-11 10:47:02.907 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<FAILED
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1557589718954
+2871<<Administration Result<<2019-05-11 10:48:40.097 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1557590086658
+2871<<Administration Result<<2019-05-11 10:54:53.280 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1557593428964
+2871<<Administration Result<<2019-05-11 11:50:34.042 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1557593566164
+2871<<Administration Result<<2019-05-11 11:52:50.318 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1557593638931
+2871<<Administration Result<<2019-05-11 11:54:01.781 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+HotelsRestApp>>TESTNODE_jcduenasr>>default>>0>>1557594417429
+2871<<Administration Result<<2019-05-11 12:07:03.028 COT<<DESKTOP-JU9JN08\jcduenasr<<deploy<<C:/Users/jcduenasr/IBM/IIBT10/ws-soap/GeneratedBarFiles/HotelsRestAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
