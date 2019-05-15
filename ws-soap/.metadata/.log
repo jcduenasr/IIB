@@ -7942,3 +7942,372 @@ java.io.FileNotFoundException
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
 	at java.lang.Thread.run(Thread.java:863)
+
+!ENTRY com.ibm.etools.mft.runtime 1 1 2019-05-11 14:49:19.387
+!MESSAGE [Info del cliente de prueba]Comprobando si el Grupo de ejecución está en uso...
+
+!ENTRY com.ibm.etools.mft.runtime 1 1 2019-05-11 14:49:19.425
+!MESSAGE [Info del cliente de prueba]Inicializando los supervisores de mensajes de prueba...
+
+!ENTRY com.ibm.etools.mft.runtime 1 1 2019-05-11 14:49:19.534
+!MESSAGE [Info del cliente de prueba]Iniciando los flujos de mensajes...
+
+!ENTRY com.ibm.etools.mft.runtime 1 1 2019-05-11 14:49:19.535
+!MESSAGE [Info del cliente de prueba]El cliente de prueba está listo para enviar y supervisar mensajes.
+!SESSION 2019-05-12 13:19:10.994 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 8.1 amd64-64 Compressed References 20141215_227395 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR2_20141215_1631_B227395
+JIT  - tr.r13.java_20141003_74587.07
+GC   - R27_Java727_SR2_20141215_1631_B227395_CMPRSS
+J9CL - 20141215_227395
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-05-12 13:19:51.798
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2019-05-12 13:20:33.706
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-05-12 13:20:33.722
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-05-12 13:20:33.722
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:52.595
+!MESSAGE NLS unused message: ErrorCreateTestNode in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:52.642
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogTitle in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:52.642
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogDescription in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:56.579
+!MESSAGE NLS unused message: PD_HELP_POPUP_RELATED_HELP_SECTION_TITLE in: com.ibm.etools.mft.flow.msgFlowStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:56.595
+!MESSAGE NLS unused message: PROPERTY_LEVEL_HELP_POPUP_OPEN_DYNAMIC_HELP_LINK_TEXT in: com.ibm.etools.mft.flow.msgFlowStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:56.595
+!MESSAGE NLS unused message: PD_HELP_POPUP_DECORATOR_HOVER_HELP in: com.ibm.etools.mft.flow.msgFlowStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:56.595
+!MESSAGE NLS unused message: PROPERTY_LEVEL_HELP_POPUP_MORE_INFO_LINK in: com.ibm.etools.mft.flow.msgFlowStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:56.595
+!MESSAGE NLS unused message: PROPERTY_LEVEL_HELP_POPUP_SECTION_HOVER_HELP in: com.ibm.etools.mft.flow.msgFlowStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:20:56.595
+!MESSAGE NLS unused message: WarningEditReferenceFileInRecordMode in: com.ibm.etools.mft.flow.msgFlowStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.940
+!MESSAGE NLS unused message: NewAssertionDialog_title in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.956
+!MESSAGE NLS unused message: SendMessage_msgNameLabel in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.956
+!MESSAGE NLS unused message: SendMessage_operationLabel in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.956
+!MESSAGE NLS unused message: SaveTestMessageTitle_input in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.956
+!MESSAGE NLS unused message: SaveTestMessageTitle_expected in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.972
+!MESSAGE NLS missing message: NextstepDialog_title in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.973
+!MESSAGE NLS missing message: NextstepDialog_Message in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.974
+!MESSAGE NLS missing message: NextstepDialog_externalTool in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.975
+!MESSAGE NLS missing message: NextstepDialog_inject in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.977
+!MESSAGE NLS missing message: ActionButton_displayData in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.978
+!MESSAGE NLS missing message: ActionButton_exit in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.979
+!MESSAGE NLS missing message: DirectInject_MessageBodyLabel in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.980
+!MESSAGE NLS missing message: DirectInject_BrowseButton in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.982
+!MESSAGE NLS missing message: DirectInject_ButtonLabel in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.983
+!MESSAGE NLS missing message: DirectInject_TestCaseLabel in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.984
+!MESSAGE NLS missing message: SendLastMessageAction_label in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.985
+!MESSAGE NLS missing message: SendLastMessageAction_tooltip in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.986
+!MESSAGE NLS missing message: SaveExpectedResult in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.987
+!MESSAGE NLS missing message: SaveCheckPoint in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.988
+!MESSAGE NLS missing message: SendMessageDialog_Error_1 in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.989
+!MESSAGE NLS missing message: SendMessageDialog_Warning_2 in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:21:06.991
+!MESSAGE NLS missing message: SendMessageDialog_Information_3 in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY com.ibm.etools.mft.pattern.community 4 0 2019-05-12 13:21:25.173
+!MESSAGE Connection to the URL http://ot4i.github.io/iib-patterns/es/repo_metadata.json failed. Response code: 404
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:22:41.148
+!MESSAGE NLS missing message: ApplicationLibraryProjectReferenceWizardPage_directoryLabel in: com.ibm.etools.mft.util.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:23:30.221
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:23:30.221
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:23:34.824
+!MESSAGE NLS unused message: Properties_Description in: com.ibm.etools.mft.service.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:23:34.855
+!MESSAGE NLS missing message: GenerateBindingAction_label2 in: com.ibm.etools.mft.service.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:25:52.925
+!MESSAGE NLS missing message: WSDL_GatewayNonGatewayString in: com.ibm.etools.mft.ibmnodes.plugin.ibmnodesresources
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:25:52.939
+!MESSAGE NLS missing message: tooltipFTETransferMode in: com.ibm.etools.mft.ibmnodes.plugin.ibmnodesresources
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:25:52.940
+!MESSAGE NLS missing message: CICS_GROUP_HEADER_Node_ConnectionDetails in: com.ibm.etools.mft.ibmnodes.plugin.ibmnodesresources
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:25:52.941
+!MESSAGE NLS missing message: CICS_GROUP_HEADER_Broker_ConnectionDetails in: com.ibm.etools.mft.ibmnodes.plugin.ibmnodesresources
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:45:13.577
+!MESSAGE NLS unused message: RESTAPICompiler_BAR_canAdd_notjson in: com.ibm.etools.mft.bar.compiler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:45:13.577
+!MESSAGE NLS unused message: ESQLCompiler_BAR_canAdd_notsubflow in: com.ibm.etools.mft.bar.compiler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:45:13.577
+!MESSAGE NLS missing message: RESTAPICompiler_BAR_canAdd_notrestapi in: com.ibm.etools.mft.bar.compiler.messages
+
+!ENTRY org.eclipse.osgi 2 1 2019-05-12 13:45:13.577
+!MESSAGE NLS missing message: ESQLCompiler_BAR_canAdd_notesql in: com.ibm.etools.mft.bar.compiler.messages
+
+!ENTRY org.eclipse.help 4 0 2019-05-12 15:41:33.581
+!MESSAGE Error reading help table of contents file /"org.aspectj.ajde/toc_ajprogguide.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:49)
+	at org.eclipse.help.internal.toc.TocFileProvider.getTocContributions(TocFileProvider.java:47)
+	at org.eclipse.help.internal.toc.TocManager.getAndCacheTocContributions(TocManager.java:210)
+	at org.eclipse.help.internal.toc.TocManager.getTocContributionsForToc(TocManager.java:199)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:306)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.webapp.data.TocData.loadTocs(TocData.java:230)
+	at org.eclipse.help.internal.webapp.data.TocData.<init>(TocData.java:120)
+	at org.eclipse.help.internal.webapp.data.LayoutData.getContentURL(LayoutData.java:126)
+	at org.apache.jsp.advanced.content_jsp._jspService(org.apache.jsp.advanced.content_jsp:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.jsp.jasper.JspServlet.service(JspServlet.java:155)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:386)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Thread.java:863)
+
+!ENTRY org.eclipse.help 4 0 2019-05-12 15:41:33.611
+!MESSAGE Error reading help table of contents file /"org.aspectj.ajde/toc_ajdevguide.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:49)
+	at org.eclipse.help.internal.toc.TocFileProvider.getTocContributions(TocFileProvider.java:47)
+	at org.eclipse.help.internal.toc.TocManager.getAndCacheTocContributions(TocManager.java:210)
+	at org.eclipse.help.internal.toc.TocManager.getTocContributionsForToc(TocManager.java:199)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:306)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.webapp.data.TocData.loadTocs(TocData.java:230)
+	at org.eclipse.help.internal.webapp.data.TocData.<init>(TocData.java:120)
+	at org.eclipse.help.internal.webapp.data.LayoutData.getContentURL(LayoutData.java:126)
+	at org.apache.jsp.advanced.content_jsp._jspService(org.apache.jsp.advanced.content_jsp:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.jsp.jasper.JspServlet.service(JspServlet.java:155)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:386)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Thread.java:863)
+
+!ENTRY org.eclipse.help 4 0 2019-05-12 15:41:33.613
+!MESSAGE Error reading help table of contents file /"org.aspectj.ajde/toc_adk15notebook.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:49)
+	at org.eclipse.help.internal.toc.TocFileProvider.getTocContributions(TocFileProvider.java:47)
+	at org.eclipse.help.internal.toc.TocManager.getAndCacheTocContributions(TocManager.java:210)
+	at org.eclipse.help.internal.toc.TocManager.getTocContributionsForToc(TocManager.java:199)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:306)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.webapp.data.TocData.loadTocs(TocData.java:230)
+	at org.eclipse.help.internal.webapp.data.TocData.<init>(TocData.java:120)
+	at org.eclipse.help.internal.webapp.data.LayoutData.getContentURL(LayoutData.java:126)
+	at org.apache.jsp.advanced.content_jsp._jspService(org.apache.jsp.advanced.content_jsp:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.jsp.jasper.JspServlet.service(JspServlet.java:155)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:386)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Thread.java:863)
+
+!ENTRY org.eclipse.help 4 0 2019-05-12 15:41:33.615
+!MESSAGE Error reading help table of contents file /"org.aspectj.ajde/toc_ajpdguide.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:49)
+	at org.eclipse.help.internal.toc.TocFileProvider.getTocContributions(TocFileProvider.java:47)
+	at org.eclipse.help.internal.toc.TocManager.getAndCacheTocContributions(TocManager.java:210)
+	at org.eclipse.help.internal.toc.TocManager.getTocContributionsForToc(TocManager.java:199)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:306)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.webapp.data.TocData.loadTocs(TocData.java:230)
+	at org.eclipse.help.internal.webapp.data.TocData.<init>(TocData.java:120)
+	at org.eclipse.help.internal.webapp.data.LayoutData.getContentURL(LayoutData.java:126)
+	at org.apache.jsp.advanced.content_jsp._jspService(org.apache.jsp.advanced.content_jsp:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.jsp.jasper.JspServlet.service(JspServlet.java:155)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:386)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+	at java.lang.Thread.run(Thread.java:863)

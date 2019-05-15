@@ -21,6 +21,9 @@
 <workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553986728314_24" label="[HotelsRestApp]" name="[HotelsRestApp]">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HotelsRestApp" type="4"/>
 </workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557685390344_30" label="[B2CRestApp]" name="[B2CRestApp]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/B2CRestApp" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1550964323968_0" label="Conjunto de trabajo de ventana" name="Aggregate for window 1550964323968"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551050421417_1" label="Conjunto de trabajo de ventana" name="Aggregate for window 1551050421417"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551205548281_3" label="Conjunto de trabajo de ventana" name="Aggregate for window 1551205548281"/>
@@ -43,4 +46,5 @@
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1554680870826_26" label="Conjunto de trabajo de ventana" name="Aggregate for window 1554680870826"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1555795983346_27" label="Conjunto de trabajo de ventana" name="Aggregate for window 1555795983346"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557588649283_28" label="Conjunto de trabajo de ventana" name="Aggregate for window 1557588649283"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557685276439_29" label="Conjunto de trabajo de ventana" name="Aggregate for window 1557685276439"/>
 </workingSetManager>

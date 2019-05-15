@@ -1,0 +1,12 @@
+CREATE COMPUTE MODULE getHotelsById_Compute1
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE idHotel INTEGER;
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+		SET idHotel = InputLocalEnvironment.HTTP.Input.Path;
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://192.168.1.196:8086/pica/integrations/hotels/77';
+		PROPAGATE TO TERMINAL 'out';
+		RETURN TRUE;
+	END;
+END MODULE;

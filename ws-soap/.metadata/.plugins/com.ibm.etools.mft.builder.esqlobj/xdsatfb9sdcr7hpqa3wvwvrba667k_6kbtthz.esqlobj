@@ -1,0 +1,8 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE idHotel INTEGER;
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+		SET idHotel = InputLocalEnvironment.HTTP.Input.Path;
+		RETURN TRUE;
+	END;

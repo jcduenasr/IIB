@@ -1,0 +1,13 @@
+
+
+CREATE COMPUTE MODULE getHotelsById_Compute1
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE idHotel INTEGER;
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+		SET idHotel = InputLocalEnvironment.HTTP.Input.Path;
+		PROPAGATE TO TERMINAL 'out';
+		RETURN TRUE;
+	END;
+END MODULE;
