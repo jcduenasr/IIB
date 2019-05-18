@@ -1,0 +1,20 @@
+CREATE COMPUTE MODULE getHotelsById_Compute1
+	CREATE FUNCTION Main(IN LocalEnvironment REFERENCE) RETURNS BOOLEAN
+	BEGIN
+		DECLARE idHotel char;
+		SET idHotel = InputLocalEnvironment.HTTP.Input.Path;
+		DECLARE logMessagePath CHARACTER 'Received request on path ' || InputLocalEnvironment.HTTP.Input.Path;
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://5cdb80b9069eb300142021bf.mockapi.io/api/v1/hotels/'||idHotel;
+		--SET OutputRoot = OutputLocalEnvironment.Destination.HTTP.RequestURL;
+		
+	END;
+
+	
+	
+		--DECLARE idHotel INTEGER;
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+		--SET idHotel = InputLocalEnvironment.HTTP.Input.Path;
+		--SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://5cdb80b9069eb300142021bf.mockapi.io/api/v1/hotels/4';
+		
+END MODULE;
