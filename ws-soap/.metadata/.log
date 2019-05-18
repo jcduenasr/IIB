@@ -9345,3 +9345,103 @@ java.lang.NullPointerException
 
 !ENTRY com.ibm.etools.mft.runtime 1 1 2019-05-17 13:59:36.531
 !MESSAGE [Info del cliente de prueba]El cliente de prueba está listo para enviar y supervisar mensajes.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-05-18 08:35:35.822
+!MESSAGE Detalles de la operación
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:35.822
+!MESSAGE No se puede completar la instalación debido a una dependencia en conflicto.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE Software que se está instalando: Eclipse SDK 4.2.2.M20130204-1200 (org.eclipse.sdk.ide 4.2.2.M20130204-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE Software instalado actualmente: Eclipse e4 Rich Client Platform 1.1.2.v20140822-1440 (org.eclipse.e4.rcp.feature.group 1.1.2.v20140822-1440)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:35.822
+!MESSAGE Sólo se puede instalar uno de los siguientes a la vez: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE Equinox Launcher Win32 X86_64 Fragment 1.1.200.v20131128-1623 (org.eclipse.equinox.launcher.win32.win32.x86_64 1.1.200.v20131128-1623)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE Equinox Launcher Win32 X86_64 Fragment 1.1.200.v20120522-1813 (org.eclipse.equinox.launcher.win32.win32.x86_64 1.1.200.v20120522-1813)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE Equinox Launcher Win32 X86_64 Fragment 1.1.200.v20120913-144807 (org.eclipse.equinox.launcher.win32.win32.x86_64 1.1.200.v20120913-144807)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:35.822
+!MESSAGE No se puede satisfacer la dependencia:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE De: Eclipse e4 Rich Client Platform 1.1.2.v20140822-1440 (org.eclipse.e4.rcp.feature.group 1.1.2.v20140822-1440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE A: org.eclipse.equinox.launcher.win32.win32.x86_64 [1.1.200.v20131128-1623]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:35.822
+!MESSAGE No se puede satisfacer la dependencia:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE De: Eclipse Product Configuration 1.0.0.M20130204-1200 (org.eclipse.rcp.configuration.feature.group 1.0.0.M20130204-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE A: org.eclipse.equinox.launcher.win32.win32.x86_64 [1.1.200.v20120913-144807]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:35.822
+!MESSAGE No se puede satisfacer la dependencia:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE De: Eclipse SDK 4.2.2.M20130204-1200 (org.eclipse.sdk.ide 4.2.2.M20130204-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:35.822
+!MESSAGE A: org.eclipse.rcp.configuration.feature.group [1.0.0.M20130204-1200]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-05-18 08:35:36.236
+!MESSAGE Detalles de la operación
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:36.236
+!MESSAGE No se puede completar la instalación debido a una dependencia en conflicto.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE Software que se está instalando: Eclipse SDK 4.2.2.M20130204-1200 (org.eclipse.sdk.ide 4.2.2.M20130204-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE Software instalado actualmente: Eclipse e4 Rich Client Platform 1.1.2.v20140822-1440 (org.eclipse.e4.rcp.feature.group 1.1.2.v20140822-1440)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:36.236
+!MESSAGE Sólo se puede instalar uno de los siguientes a la vez: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE Equinox Launcher Win32 X86_64 Fragment 1.1.200.v20131128-1623 (org.eclipse.equinox.launcher.win32.win32.x86_64 1.1.200.v20131128-1623)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE Equinox Launcher Win32 X86_64 Fragment 1.1.200.v20120522-1813 (org.eclipse.equinox.launcher.win32.win32.x86_64 1.1.200.v20120522-1813)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE Equinox Launcher Win32 X86_64 Fragment 1.1.200.v20120913-144807 (org.eclipse.equinox.launcher.win32.win32.x86_64 1.1.200.v20120913-144807)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:36.236
+!MESSAGE No se puede satisfacer la dependencia:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE De: Eclipse e4 Rich Client Platform 1.1.2.v20140822-1440 (org.eclipse.e4.rcp.feature.group 1.1.2.v20140822-1440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE A: org.eclipse.equinox.launcher.win32.win32.x86_64 [1.1.200.v20131128-1623]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:36.236
+!MESSAGE No se puede satisfacer la dependencia:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE De: Eclipse Product Configuration 1.0.0.M20130204-1200 (org.eclipse.rcp.configuration.feature.group 1.0.0.M20130204-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE A: org.eclipse.equinox.launcher.win32.win32.x86_64 [1.1.200.v20120913-144807]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:36.236
+!MESSAGE No se puede satisfacer la dependencia:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.236
+!MESSAGE De: Eclipse SDK 4.2.2.M20130204-1200 (org.eclipse.sdk.ide 4.2.2.M20130204-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:36.237
+!MESSAGE A: org.eclipse.rcp.configuration.feature.group [1.0.0.M20130204-1200]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-05-18 08:35:44.266
+!MESSAGE Detalles de la operación
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:44.266
+!MESSAGE No se puede completar la instalación porque no se han podido encontrar uno o varios elementos necesarios.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:44.266
+!MESSAGE Software que se está instalando: IBM Integration Toolkit Language Pack 1 10.0.200.v20150910-1651 (com.ibm.etools.iib.toolkit.nl1.feature.group 10.0.200.v20150910-1651)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:44.266
+!MESSAGE Requisito faltante: IBM Integration Bus: Toolkit local help translation 10.0.0.v20150327_0856 (com.ibm.iib.localhelp.doc.feature.nl1.feature.group 10.0.0.v20150327_0856) requiere 'com.ibm.iib.localhelp.doc.feature.feature.group [10.0.0.v20150327_0856,10.1.0)' pero no se ha podido encontrar
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:44.266
+!MESSAGE No se puede satisfacer la dependencia:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:44.266
+!MESSAGE De: IBM Integration Toolkit Language Pack 1 10.0.200.v20150910-1651 (com.ibm.etools.iib.toolkit.nl1.feature.group 10.0.200.v20150910-1651)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:44.266
+!MESSAGE A: com.ibm.iib.localhelp.doc.feature.nl1.feature.group [10.0.0.v20150327_0856]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-05-18 08:35:44.270
+!MESSAGE Detalles de la operación
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:44.270
+!MESSAGE No se puede completar la instalación porque no se han podido encontrar uno o varios elementos necesarios.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:44.270
+!MESSAGE Software que se está instalando: IBM Integration Toolkit Language Pack 1 10.0.200.v20150910-1651 (com.ibm.etools.iib.toolkit.nl1.feature.group 10.0.200.v20150910-1651)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:44.270
+!MESSAGE Requisito faltante: IBM Integration Bus: Toolkit local help translation 10.0.0.v20150327_0856 (com.ibm.iib.localhelp.doc.feature.nl1.feature.group 10.0.0.v20150327_0856) requiere 'com.ibm.iib.localhelp.doc.feature.feature.group [10.0.0.v20150327_0856,10.1.0)' pero no se ha podido encontrar
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-05-18 08:35:44.270
+!MESSAGE No se puede satisfacer la dependencia:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:44.270
+!MESSAGE De: IBM Integration Toolkit Language Pack 1 10.0.200.v20150910-1651 (com.ibm.etools.iib.toolkit.nl1.feature.group 10.0.200.v20150910-1651)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-05-18 08:35:44.270
+!MESSAGE A: com.ibm.iib.localhelp.doc.feature.nl1.feature.group [10.0.0.v20150327_0856]

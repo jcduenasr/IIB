@@ -4,8 +4,8 @@ CREATE COMPUTE MODULE getHotelsById_Compute1
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
 		
-		--CALL CopyMessageHeaders();
-		--CALL CopyEntireMessage();
+		CALL CopyMessageHeaders();
+		CALL CopyEntireMessage();
 		
 		DECLARE idHotel CHARACTER;
 		SET idHotel = InputLocalEnvironment.HTTP.Input.QueryString.idhotel;

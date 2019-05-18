@@ -1,0 +1,11 @@
+
+
+CREATE COMPUTE MODULE getHotelsRooms_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE idHotel CHARACTER;
+		SET idHotel = InputLocalEnvironment.HTTP.Input.QueryString.idhotel;
+		RETURN TRUE;
+	END;
+	
+END MODULE;

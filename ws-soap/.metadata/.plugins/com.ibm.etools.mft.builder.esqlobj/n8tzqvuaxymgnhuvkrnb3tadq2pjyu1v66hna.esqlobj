@@ -1,0 +1,8 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE idHotel CHARACTER;
+		SET idHotel = InputLocalEnvironment.HTTP.Input.QueryString.idhotel;
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://localhost:8088/hotels/'|idHotel|'/rooms';
+		RETURN TRUE;
+	END;
+	

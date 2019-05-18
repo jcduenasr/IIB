@@ -1,0 +1,7 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE idHotel CHARACTER;
+		SET idHotel = InputLocalEnvironment.HTTP.Input.QueryString.idhotel;
+		RETURN TRUE;
+	END;
+	
