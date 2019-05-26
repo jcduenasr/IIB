@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=GeneratedBarFiles,SoapIntegrationService,TestModeBarFiles,AdditionApp,calculator_msp,WS_Calculator,libreriamq,TestClientBarFiles,TallerSOAMQ,BolivarianoRestApp,HotelsRestApp,B2CRestApp,HotelsRestApi
+task-tag-projects-already-scanned=GeneratedBarFiles,TestModeBarFiles,calculator_msp,libreriamq,TestClientBarFiles,TallerSOAMQ,BolivarianoRestApp,HotelsRestApp,B2CRestApp,AirlinesRestApp,CreditCardRestApp,HiltonRestApp

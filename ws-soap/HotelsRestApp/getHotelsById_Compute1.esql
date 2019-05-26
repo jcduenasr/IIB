@@ -9,10 +9,8 @@ CREATE COMPUTE MODULE getHotelsById_Compute1
 		
 		DECLARE idHotel CHARACTER;
 		SET idHotel = InputLocalEnvironment.HTTP.Input.QueryString.idhotel;
-		--DECLARE logMessagePath CHARACTER 'Received request on path ' || InputLocalEnvironment.HTTP.Input.Path;
-		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://5cdb80b9069eb300142021bf.mockapi.io/api/v1/hotels/'||idHotel;
-		--SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://5cdb80b9069eb300142021bf.mockapi.io/api/v1/hotels/8';
-		--SET OutputRoot = OutputLocalEnvironment.Destination.HTTP.RequestURL;
+		
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://192.168.1.131:8086/pica/integrations/hotels/'||idHotel;
 		
 		RETURN TRUE;
 	END;

@@ -1,0 +1,21 @@
+CREATE COMPUTE MODULE searchFlights_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE departingCity CHARACTER;
+		DECLARE departingDate CHARACTER;
+		DECLARE arrivingCity CHARACTER;
+		DECLARE cabin CHARACTER;
+		DECLARE airline CHARACTER;
+		SET departingCity = InputLocalEnvironment.HTTP.Input.QueryString.departingCity;
+		SET departingDate = InputLocalEnvironment.HTTP.Input.QueryString.departingDate;
+		SET arrivingCity = InputLocalEnvironment.HTTP.Input.QueryString.arrivingCity;
+		SET cabin = InputLocalEnvironment.HTTP.Input.QueryString.cabin;
+		SET airline = InputLocalEnvironment.HTTP.Input.QueryString.airline;
+		
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.departingCity = departingCity;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.departingDate = departingDate;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.arrivingCity = arrivingCity;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.cabin = cabin;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.airline = airline;
+	END;
+END MODULE;

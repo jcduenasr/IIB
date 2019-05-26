@@ -1,0 +1,19 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE departingCity CHARACTER;
+		DECLARE departingDate CHARACTER;
+		DECLARE arrivingCity CHARACTER;
+		DECLARE cabin CHARACTER;
+		DECLARE airline CHARACTER;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.departingCity;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.departingDate;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.arrivingCity;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.cabin;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.airline;
+		
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = departingCity;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = departingDate;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = arrivingCity;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = cabin;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = airline;
+	END;

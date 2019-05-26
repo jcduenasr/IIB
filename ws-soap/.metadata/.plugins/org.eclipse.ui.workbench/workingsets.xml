@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551053987279_2" label="[SoapIntegrationService]" name="[SoapIntegrationService]">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SoapIntegrationService" type="4"/>
-</workingSet>
-<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551209608161_4" label="[AdditionApp]" name="[AdditionApp]">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AdditionApp" type="4"/>
-</workingSet>
-<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1552422596110_8" label="[WS_Calculator]" name="[WS_Calculator]">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/WS_Calculator" type="4"/>
-</workingSet>
 <workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1552423359222_9" label="[libreriamq]" name="[libreriamq]">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/libreriamq" type="4"/>
 </workingSet>
@@ -23,6 +14,15 @@
 </workingSet>
 <workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557685390344_30" label="[B2CRestApp]" name="[B2CRestApp]">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/B2CRestApp" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558789941775_37" label="[AirlinesRestApp]" name="[AirlinesRestApp]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AirlinesRestApp" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558795455884_38" label="[CreditCardRestApp]" name="[CreditCardRestApp]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CreditCardRestApp" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558796809273_39" label="[HiltonRestApp]" name="[HiltonRestApp]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HiltonRestApp" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1550964323968_0" label="Conjunto de trabajo de ventana" name="Aggregate for window 1550964323968"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551050421417_1" label="Conjunto de trabajo de ventana" name="Aggregate for window 1551050421417"/>
@@ -50,4 +50,8 @@
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557943325061_31" label="Conjunto de trabajo de ventana" name="Aggregate for window 1557943325061"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558029061580_32" label="Conjunto de trabajo de ventana" name="Aggregate for window 1558029061579"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558056964018_34" label="Conjunto de trabajo de ventana" name="Aggregate for window 1558056964018"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558270107078_34" label="Conjunto de trabajo de ventana" name="Aggregate for window 1558270107078"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558405730281_35" label="Conjunto de trabajo de ventana" name="Aggregate for window 1558405730281"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558789684196_36" label="Conjunto de trabajo de ventana" name="Aggregate for window 1558789684196"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1558820779370_37" label="Conjunto de trabajo de ventana" name="Aggregate for window 1558820779370"/>
 </workingSetManager>

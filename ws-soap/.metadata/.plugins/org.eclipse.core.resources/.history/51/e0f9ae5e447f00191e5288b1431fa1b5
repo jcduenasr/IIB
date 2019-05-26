@@ -1,0 +1,12 @@
+
+
+CREATE COMPUTE MODULE getHotelsRooms_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE idHotel CHARACTER;
+		SET idHotel = InputLocalEnvironment.HTTP.Input.QueryString.idhotel;
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://192.168.131:8086/pica/integrations/hotels/'||idHotel||'/rooms';
+		RETURN TRUE;
+	END;
+	
+END MODULE;

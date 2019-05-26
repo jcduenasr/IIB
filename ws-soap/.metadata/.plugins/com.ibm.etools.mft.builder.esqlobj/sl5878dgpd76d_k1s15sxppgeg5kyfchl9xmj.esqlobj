@@ -1,0 +1,9 @@
+CREATE COMPUTE MODULE searchFlights_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE idProducto CHARACTER;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.idproducto;
+		
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = idProducto;
+	END;
+END MODULE;

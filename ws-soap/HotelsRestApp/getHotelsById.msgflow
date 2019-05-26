@@ -6,13 +6,13 @@
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/HotelsRestApp/icons/full/obj16/getHotelsById.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/HotelsRestApp/icons/full/obj30/getHotelsById.gif"/>
     <composition>
-      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="55,73" URLSpecifier="/hotels/" parseQueryString="true">
+      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="51,83" URLSpecifier="/hotels/" parseQueryString="true">
         <translation xmi:type="utility:ConstantString" string="HTTP Input"/>
       </nodes>
-      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="545,71">
+      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="460,80">
         <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
       </nodes>
-      <nodes xmi:type="ComIbmWSRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="272,81" URLSpecifier="http://5cdb80b9069eb300142021bf.mockapi.io/api/v1/hotels/5" httpMethod="GET" protocol="TLS" useWholeInputMsgAsRequest="false" requestMsgLocationInTree="Environment">
+      <nodes xmi:type="ComIbmWSRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="275,80" URLSpecifier="http://192.168.1.131:8086/pica/integrations/hotels/" httpMethod="GET" protocol="TLS" useWholeInputMsgAsRequest="false" requestMsgLocationInTree="Environment">
         <translation xmi:type="utility:ConstantString" string="HTTP Request"/>
       </nodes>
       <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="166,79" computeExpression="esql://routine/#getHotelsById_Compute1.Main" computeMode="all">

@@ -1,0 +1,7 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE idProducto CHARACTER;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.idproducto;
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://5cdb80b9069eb300142021bf.mockapi.io/api/v1/products/'||idProducto;
+	END;
+
