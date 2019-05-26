@@ -77,7 +77,7 @@ paths:
           schema:
             $ref: '#/definitions/ProductRequest'
       responses:
-        '201':
+        '200':
           description: Status of the booking request
           schema:
             type: array
@@ -104,7 +104,7 @@ paths:
           schema:
             $ref: '#/definitions/ProductRequest'
       responses:
-        '201':
+        '200':
           description: Status of the booking request
           schema:
             type: array
