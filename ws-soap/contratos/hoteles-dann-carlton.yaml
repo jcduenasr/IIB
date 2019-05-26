@@ -8,8 +8,7 @@ info:
 host: '127.0.0.1:7800'
 basePath: /toures-balon/external-integrations
 tags:
-  - name: airline-controller
-    description: Airline Controller
+  - name: Hoteles Dann Carlton Integration
 paths:
   /hotels/reservation/create:
     post:
@@ -30,10 +29,10 @@ paths:
           schema:
             $ref: '#/definitions/ReservationRequest'
       responses:
-        '200':
+        '201':
           description: Status of the booking request
           schema:
-            type: string
+            $ref: '#/definitions/ReservationResponse'
         '500':
           description: Internal server error
   /hotels:
@@ -61,7 +60,7 @@ paths:
   /hotels/byid:
     get:
       tags:
-        - Get Hotels
+        - Get Hotels By Id
       summary: Gets the list of hotels available
       operationId: getHotelsById
       consumes:
@@ -83,6 +82,35 @@ paths:
             type: array
             items:
               $ref: '#/definitions/HotelDTO'
+        '400':
+          description: 'Bad Request, usually because any of the parameters do not comply with the expected format'
+        '500':
+          description: Internal server error
+  /hotels/rooms:
+    get:
+      tags:
+        - Get Hotel Rooms
+      summary: Gets the list of hotels available
+      operationId: getHotelRooms
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/json;charset=UTF-8
+      parameters:
+        - name: hotelId
+          in: query
+          description: Hotel Identifier
+          required: true
+          type: string
+        
+      responses:
+        '200':
+          description: Returns the hotel that matches the specified identifier
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/HotelRoomsDTO'
         '400':
           description: 'Bad Request, usually because any of the parameters do not comply with the expected format'
         '500':
@@ -127,6 +155,51 @@ definitions:
         example: 'John Doe'
         description: Customer's Name
     description: Class representing the request to be done for booking a room.
+  ReservationResponse:
+    type: object
+    required:
+      - orderId
+      - hotelId
+      - roomNumber
+      - checkInDate
+      - checkOutDate
+      - state
+      - guestName
+    properties:
+      orderId:
+        type: integer
+        format: int32
+        example: 1
+        description: Order Indentifier
+      hotelId:
+        type: integer
+        example: 1
+        description: Hotel Identifier
+      roomNumber:
+        type: integer
+        format: int32
+        example: 101
+        description: Number of the room to book
+      checkInDate:
+        type: string
+        format: date
+        example: '2019-05-20'
+        description: Checkin date in ISO format
+      checkOutDate:
+        type: string
+        format: date
+        example: '2019-05-20'
+        description: Checkout date in ISO format
+      state:
+        type: integer
+        format: int32
+        example: 0
+        description: Represents the state of the reserve
+      guestName:
+        type: string
+        example: 'John Doe'
+        description: Customer's Name
+    description: Class representing the response for booking a room.
   HotelDTO:
     type: object
     required:
@@ -157,4 +230,30 @@ definitions:
         example: 'CO'
         description: 'Code IATA of the country where the hotel is located'
     description: Class that holds all of the hotel details
+  HotelRoomsDTO:
+    type: object
+    required:
+      - roomNumber
+      - hotelId
+      - type
+      - price
+    properties:
+      roomNumber:
+        type: integer
+        example: 245
+        description: Room Number
+      hotelId:
+        type: integer
+        example: 35
+        description: Hotel Identifier
+      type:
+        type: string
+        example: 'Suite'
+        description: Room Type
+      price:
+        type: number
+        format: double
+        example: 1880446.7201523
+        description: Room Price
+    description: Class that holds all of the hotel room details
   
