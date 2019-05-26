@@ -79,9 +79,7 @@ paths:
         '200':
           description: Returns the hotel that matches the specified identifier
           schema:
-            type: array
-            items:
-              $ref: '#/definitions/HotelDTO'
+            $ref: '#/definitions/HotelDTO'
         '400':
           description: 'Bad Request, usually because any of the parameters do not comply with the expected format'
         '500':
