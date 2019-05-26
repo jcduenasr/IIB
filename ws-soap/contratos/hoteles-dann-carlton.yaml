@@ -1,0 +1,160 @@
+swagger: '2.0'
+info:
+  description: Soap wrappers for communication with ledacy and third party systems
+  version: 1.0.0
+  title: Pica Integrations
+  contact:
+    name: Archilabs inc
+host: '127.0.0.1:7800'
+basePath: /toures-balon/external-integrations
+tags:
+  - name: airline-controller
+    description: Airline Controller
+paths:
+  /hotels/reservation/create:
+    post:
+      tags:
+        - Create Reservation
+      summary: Books a flight
+      operationId: createReservation
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/json
+      parameters:
+        - in: body
+          name: bookFlightRequest
+          description: JSON representing the booking request
+          required: true
+          schema:
+            $ref: '#/definitions/ReservationRequest'
+      responses:
+        '200':
+          description: Status of the booking request
+          schema:
+            type: string
+        '500':
+          description: Internal server error
+  /hotels:
+    get:
+      tags:
+        - Get Hotels
+      summary: Gets the list of hotels available
+      operationId: getAllHotels
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/json;charset=UTF-8
+      responses:
+        '200':
+          description: List of available flights
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/HotelDTO'
+        '400':
+          description: 'Bad Request, usually because any of the parameters do not comply with the expected format'
+        '500':
+          description: Internal server error
+  /hotels/byid:
+    get:
+      tags:
+        - Get Hotels
+      summary: Gets the list of hotels available
+      operationId: getHotelsById
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/json;charset=UTF-8
+      parameters:
+        - name: hotelId
+          in: query
+          description: Hotel Identifier
+          required: true
+          type: string
+        
+      responses:
+        '200':
+          description: Returns the hotel that matches the specified identifier
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/HotelDTO'
+        '400':
+          description: 'Bad Request, usually because any of the parameters do not comply with the expected format'
+        '500':
+          description: Internal server error
+definitions:
+  ReservationRequest:
+    type: object
+    required:
+      - orderId
+      - hotelId
+      - roomNumber
+      - checkInDate
+      - checkOutDate
+      - guestName
+    properties:
+      orderId:
+        type: integer
+        format: int32
+        example: 1
+        description: Order Indentifier
+      hotelId:
+        type: integer
+        example: 1
+        description: Hotel Identifier
+      roomNumber:
+        type: integer
+        format: int32
+        example: 101
+        description: Number of the room to book
+      checkInDate:
+        type: string
+        format: date
+        example: '2019-05-20'
+        description: Checkin date in ISO format
+      checkOutDate:
+        type: string
+        format: date
+        example: '2019-05-20'
+        description: Checkout date in ISO format
+      guestName:
+        type: string
+        example: 'John Doe'
+        description: Customer's Name
+    description: Class representing the request to be done for booking a room.
+  HotelDTO:
+    type: object
+    required:
+      - id
+      - name
+      - address
+      - city
+      - country
+    properties:
+      id:
+        type: integer
+        example: 21
+        description: Hotel Identifier
+      name:
+        type: string
+        example: 'Pollich-Reichert'
+        description: Hotel Name
+      address:
+        type: string
+        example: '02956 Julia Ridge Suite 969'
+        description: Hotel Addres
+      city:
+        type: string
+        example: Cali
+        description: City where the hotel is located
+      country:
+        type: string
+        example: 'CO'
+        description: 'Code IATA of the country where the hotel is located'
+    description: Class that holds all of the hotel details
+  

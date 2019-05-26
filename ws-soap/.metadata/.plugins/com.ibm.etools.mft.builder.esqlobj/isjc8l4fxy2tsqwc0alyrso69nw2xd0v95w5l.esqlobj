@@ -1,0 +1,15 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE departureCity CHARACTER;
+		DECLARE arrivalCity CHARACTER;
+		DECLARE departureTime CHARACTER;
+
+		SET departureCity = InputLocalEnvironment.HTTP.Input.QueryString.departureCity;
+		SET arrivalCity = InputLocalEnvironment.HTTP.Input.QueryString.arrivalCity;
+		SET departureTime = InputLocalEnvironment.HTTP.Input.QueryString.departureTime;
+		
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.departureCity = departureCity;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.arrivalCity = arrivalCity;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.departureTime = departureTime;
+		
+	END;

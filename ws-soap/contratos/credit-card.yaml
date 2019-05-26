@@ -1,0 +1,100 @@
+swagger: '2.0'
+info:
+  description: Soap wrappers for communication with ledacy and third party systems
+  version: 1.0.0
+  title: Pica Integrations
+  contact:
+    name: Archilabs inc
+host: '127.0.0.1:7800'
+basePath: /toures-balon/external-integrations
+tags:
+  - name: credit-card-controller
+    description: Credit Card Controller
+paths:
+  /creditcard/charge:
+    post:
+      tags:
+        - credit-card-controller
+      summary: chargeCreditCard
+      operationId: chargeCreditCardUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - in: body
+          name: creditCardRequest
+          description: JSON that holds the required information for charging the credit card
+          required: true
+          schema:
+            $ref: '#/definitions/CreditCardRequest'
+      responses:
+        '200':
+          description: Status of charge request
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+  /creditcard/verify:
+    post:
+      tags:
+        - credit-card-controller
+      summary: Verifies the credit card by charging a small amount
+      operationId: verifyCreditCardUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/text
+      parameters:
+        - in: body
+          name: creditCardRequest
+          description: JSON that holds the required information for verifying the credit card
+          required: true
+          schema:
+            $ref: '#/definitions/CreditCardRequest'
+      responses:
+        '200':
+          description: Status of the verification request
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+definitions:
+  CreditCardRequest:
+    type: object
+    required:
+      - mount
+      - number
+      - type
+    properties:
+      type:
+        type: string
+        example: Visa
+        description: Type of the credit card
+      mount:
+        type: number
+        format: double
+        example: Visa
+        description: 'Amount to be charged to the credit card, when doing verifications it''s recommended that this amount does not exceed $3500 COP'
+      number:
+        type: string
+        example: '4593000000000000'
+        description: Number of the credit card
+    description: Class representing the request to be done for verifying and charging credit cards.

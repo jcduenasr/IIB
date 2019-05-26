@@ -8,7 +8,7 @@ CREATE COMPUTE MODULE getHotelsById_Compute1
 		CALL CopyEntireMessage();
 		
 		DECLARE idHotel CHARACTER;
-		SET idHotel = InputLocalEnvironment.HTTP.Input.QueryString.idhotel;
+		SET idHotel = InputLocalEnvironment.HTTP.Input.QueryString.hotelId;
 		
 		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://192.168.1.131:8086/pica/integrations/hotels/'||idHotel;
 		

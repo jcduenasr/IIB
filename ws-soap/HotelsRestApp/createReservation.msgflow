@@ -6,7 +6,7 @@
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/HotelsRestApp/icons/full/obj16/createReservation.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/HotelsRestApp/icons/full/obj30/createReservation.gif"/>
     <composition>
-      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="69,96" URLSpecifier="/hotels/reservation/create" messageDomainProperty="JSON" validateMaster="content">
+      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="69,96" URLSpecifier="/toures-balon/external-integrations/hotels/reservation/create" messageDomainProperty="JSON" validateMaster="content">
         <translation xmi:type="utility:ConstantString" string="HTTP Input"/>
       </nodes>
       <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="582,93">
