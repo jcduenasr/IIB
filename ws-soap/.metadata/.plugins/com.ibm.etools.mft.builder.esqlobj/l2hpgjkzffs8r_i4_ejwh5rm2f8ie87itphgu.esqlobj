@@ -1,0 +1,11 @@
+CREATE COMPUTE MODULE getProductById_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE idProducto CHARACTER;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.productId;
+		
+		--SET OutputLocalEnvironment.Destination.HTTP.RequestURL = 'http://localhost:5000/api/productos/id';
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = idProducto;
+	END;
+
+END MODULE;

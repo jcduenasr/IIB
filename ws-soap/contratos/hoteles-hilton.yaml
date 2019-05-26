@@ -1,0 +1,158 @@
+swagger: '2.0'
+info:
+  description: Soap wrappers for communication with ledacy and third party systems
+  version: 1.0.0
+  title: Pica Integrations
+  contact:
+    name: Archilabs inc
+host: '127.0.0.1:7800'
+basePath: /toures-balon/external-integrations
+tags:
+  - name: hilton-booking-controller
+    description: Hilton Booking Controller
+paths:
+  /hilton/booking:
+    post:
+      tags:
+        - hilton-booking-controller
+      summary: Books a room
+      operationId: bookUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/text
+      parameters:
+        - in: body
+          name: bookingRequest
+          description: bookingRequest
+          required: true
+          schema:
+            $ref: '#/definitions/BookingRequest'
+      responses:
+        '200':
+          description: Status of the booking request
+          schema:
+            type: boolean
+        '500':
+          description: Internal server error
+  /hilton/rooms:
+    get:
+      tags:
+        - hilton-rooms-controller
+      summary: Search available rooms
+      operationId: bookUsingGET
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/text
+      parameters:
+        - in: body
+          name: roomsRequest
+          description: roomsRequest
+          required: true
+          schema:
+            $ref: '#/definitions/GetRoomsRequest'
+      responses:
+        '200':
+          description: List of available rooms
+          schema:
+            $ref: '#/definitions/Room'
+        '500':
+          description: Internal server error
+definitions:
+  BookingRequest:
+    type: object
+    required:
+      - checkin
+      - checkout
+      - guestName
+      - hotel
+      - roomNumber
+    properties:
+      guestName:
+        type: string
+        example: Arya Stark
+        description: Name of the guest
+      hotel:
+        type: string
+        example: Hilton 93
+        description: Hotel
+      roomNumber:
+        type: integer
+        format: int32
+        example: 101
+        description: Number of the room to book
+      checkout:
+        type: string
+        format: date
+        example: '2019-05-20'
+        description: Checkout date in ISO format
+      checkin:
+        type: string
+        format: date
+        example: '2019-05-20'
+        description: Checkin date in ISO format
+    description: Class representing the request to be done for booking a room.
+  GetRoomsRequest:
+    type: object
+    required:
+      - checkin
+      - checkout
+      - city
+      - country
+      - rooms
+      - type
+    properties:
+      city:
+        type: string
+        example: BOG
+        description: City of the hotel
+      country:
+        type: string
+        example: CO
+        description: Country of the hotel
+      type:
+        type: string
+        example: Double
+        description: Type of the room to book
+      rooms:
+        type: integer
+        format: int32
+        example: 1
+        description: Number of rooms to book
+      checkout:
+        type: string
+        format: date
+        example: '2019-05-20'
+        description: Desired checkout date in ISO format
+      checkin:
+        type: string
+        format: date
+        example: '2019-05-20'
+        description: Desired checkin date in ISO format
+    description: Class representing the request to be done for searching the rooms available.
+  Hotel:
+    type: object
+    properties:
+      address:
+        type: string
+      city:
+        type: string
+      country:
+        type: string
+      name:
+        type: string
+  Room:
+    type: object
+    properties:
+      hotel:
+        $ref: '#/definitions/Hotel'
+      number:
+        type: integer
+      price:
+        type: number
+        format: float
+      type:
+        type: string

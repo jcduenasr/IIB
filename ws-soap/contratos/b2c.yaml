@@ -1,0 +1,208 @@
+swagger: '2.0'
+info:
+  description: Soap wrappers for communication with ledacy and third party systems
+  version: 1.0.0
+  title: B2C
+  contact:
+    name: Archilabs inc
+host: '127.0.0.1:7800'
+basePath: /toures-balon/b2c
+
+paths:
+  /products:
+    get:
+      tags:
+        - Get Products
+      summary: Gets the list of hotels available
+      operationId: getAllProducts
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/json;charset=UTF-8
+      responses:
+        '200':
+          description: List of available products
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ProductDTO'
+        '400':
+          description: 'Bad Request, usually because any of the parameters do not comply with the expected format'
+        '500':
+          description: Internal server error
+  /products/byid:
+    get:
+      tags:
+        - Get Products By Id
+      summary: Get the product By Identifier
+      operationId: getProductsById
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/json;charset=UTF-8
+      parameters:
+        - name: productId
+          in: query
+          description: Product Identifier
+          required: true
+          type: string
+        
+      responses:
+        '200':
+          description: Returns the product that matches the specified identifier
+          schema:
+            $ref: '#/definitions/ProductDTO'
+        '400':
+          description: 'Bad Request, usually because any of the parameters do not comply with the expected format'
+        '500':
+          description: Internal server error
+  /products/byname:
+    post:
+      tags:
+        - Search Product By name
+      summary: Returns products that match the indicated name
+      operationId: serachProductByName
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/json
+      parameters:
+        - in: body
+          name: ProductRequest
+          description: JSON representing the booking request
+          required: true
+          schema:
+            $ref: '#/definitions/ProductRequest'
+      responses:
+        '201':
+          description: Status of the booking request
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ProductDTO'
+        '500':
+          description: Internal server error
+  /products/bydescription:
+    post:
+      tags:
+        - Search Product By name
+      summary: Returns products that match the indicated name
+      operationId: serachProductByDescription
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+        - application/json
+      parameters:
+        - in: body
+          name: ProductRequest
+          description: JSON representing the booking request
+          required: true
+          schema:
+            $ref: '#/definitions/ProductRequest'
+      responses:
+        '201':
+          description: Status of the booking request
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ProductDTO'
+        '500':
+          description: Internal server error
+definitions:
+  ProductRequest:
+    type: object
+    required:
+      - valor
+    properties:
+      valor:
+        type: string
+        example: 'futbol'
+        description: Product Name to search
+    description: Class representing the request to be done for booking a room.
+  ProductDTO:
+    type: object
+    required:
+      - id
+      - name
+      - address
+      - city
+      - country
+    properties:
+      id:
+        type: integer
+        example: 1
+        description: Product Identifier
+      espectaculo:
+        type: string
+        example: 'Futbol'
+        description: Show Name
+      descripcion:
+        type: string
+        example: 'Un muy buen evento de futbol'
+        description: Show Description
+      fecha_espectaculo:
+        type: string
+        example: '2019-12-12T00:00:00'
+        description: Date of the show
+      ciudad_espectaculo:
+        type: string
+        example: 'Bogota'
+        description: 'City where the show takes place'
+      fecha_llegada:
+        type: string
+        example: '2019-11-12T00:00:00'
+        description: Date of arrival
+      fecha_salida:
+        type: string
+        example: '2019-12-12T00:00:00'
+        description: date of departure
+      tipo_transporte:
+        type: string
+        example: 1
+        description: Transport type identifier
+      tipo_espectaculo:
+        type: string
+        example: 1
+        description: Show type identifier
+      tipo_hospedaje:
+        type: string
+        example: 1
+        description: Accommodation type identifier
+      tarifa_transporte_id:
+        type: string
+        example: 1
+        description: Transportation rate identifier
+      tarifa_hospedaje_id:
+        type: string
+        example: 1
+        description: Accomodation rate identifier
+      tarifa_espectaculo_id:
+        type: string
+        example: 1
+        description: Show rate identifier
+      ciudad_id:
+        type: string
+        example: 1
+        description: City identifier
+      img:
+        type: string
+        example: 'https://loremflickr.com/400/400/uef'
+        description: Image URL
+      tarifa_hospedaje:
+        type: string
+        example: 1000
+        description: Accomodation rate
+      tarifa_transporte:
+        type: string
+        example: 1000
+        description: Transportation rate
+      tarifa_espectaculo:
+        type: string
+        example: 1000
+        description: Show rate
+    description: Class that holds all of the Product details
+  
