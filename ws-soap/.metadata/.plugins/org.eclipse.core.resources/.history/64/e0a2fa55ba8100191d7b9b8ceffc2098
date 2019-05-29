@@ -1,0 +1,26 @@
+
+
+CREATE COMPUTE MODULE rooms_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE city CHARACTER;
+		DECLARE country CHARACTER;
+		DECLARE type CHARACTER;
+		DECLARE rooms CHARACTER;
+		DECLARE checkout CHARACTER;
+		DECLARE checkin CHARACTER;
+		SET city = InputLocalEnvironment.HTTP.Input.QueryString.city;
+		SET country = InputLocalEnvironment.HTTP.Input.QueryString.country;
+		SET type = InputLocalEnvironment.HTTP.Input.QueryString.type;
+		SET rooms = InputLocalEnvironment.HTTP.Input.QueryString.rooms;
+		SET checkout = InputLocalEnvironment.HTTP.Input.QueryString.checkout;
+		SET checkin = InputLocalEnvironment.HTTP.Input.QueryString.checkin;
+		
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.city = city;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.departingCity = country;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.type = type;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.rooms = rooms;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.checkout = checkout;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.checkin = checkin;
+	END;
+END MODULE;

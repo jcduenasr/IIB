@@ -1,0 +1,11 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE idProducto CHARACTER;
+		DECLARE url CHARACTER;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.productId;
+		SET url = getUserDefinedProperty({0});
+		
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = url;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = idProducto;
+	END;
+

@@ -7,9 +7,7 @@ info:
     name: Archilabs inc
 host: '127.0.0.1:7800'
 basePath: /toures-balon/external-integrations
-tags:
-  - name: hilton-booking-controller
-    description: Hilton Booking Controller
+
 paths:
   /hilton/booking:
     post:
@@ -33,7 +31,7 @@ paths:
         '200':
           description: Status of the booking request
           schema:
-            type: boolean
+            $ref: '#/definitions/BookingResponse'
         '500':
           description: Internal server error
   /hilton/rooms:
@@ -48,17 +46,45 @@ paths:
         - '*/*'
         - application/text
       parameters:
-        - in: body
-          name: roomsRequest
-          description: roomsRequest
+        - name: city
+          in: query
+          description: City name in ISO
           required: true
-          schema:
-            $ref: '#/definitions/GetRoomsRequest'
+          type: string
+        - name: country
+          in: query
+          description: Code IATA of the country 
+          required: true
+          type: string
+          format: date
+        - name: type
+          in: query
+          description: Accommodation type
+          required: true
+          type: string
+        - name: rooms
+          in: query
+          description: Rooms number
+          required: true
+          type: string
+        - name: checkout
+          in: query
+          description: Checkout Date
+          required: false
+          format: date
+          type: string
+        - name: checkin
+          in: query
+          description: Checkin date
+          required: true
+          format: date
+          type: string
       responses:
         '200':
-          description: List of available rooms
+          description: 'true'
           schema:
-            $ref: '#/definitions/Room'
+            type: boolean
+            example: true
         '500':
           description: Internal server error
 definitions:
@@ -95,44 +121,10 @@ definitions:
         example: '2019-05-20'
         description: Checkin date in ISO format
     description: Class representing the request to be done for booking a room.
-  GetRoomsRequest:
-    type: object
-    required:
-      - checkin
-      - checkout
-      - city
-      - country
-      - rooms
-      - type
-    properties:
-      city:
-        type: string
-        example: BOG
-        description: City of the hotel
-      country:
-        type: string
-        example: CO
-        description: Country of the hotel
-      type:
-        type: string
-        example: Double
-        description: Type of the room to book
-      rooms:
-        type: integer
-        format: int32
-        example: 1
-        description: Number of rooms to book
-      checkout:
-        type: string
-        format: date
-        example: '2019-05-20'
-        description: Desired checkout date in ISO format
-      checkin:
-        type: string
-        format: date
-        example: '2019-05-20'
-        description: Desired checkin date in ISO format
-    description: Class representing the request to be done for searching the rooms available.
+  BookingResponse:
+    type: boolean
+    example: true
+      
   Hotel:
     type: object
     properties:

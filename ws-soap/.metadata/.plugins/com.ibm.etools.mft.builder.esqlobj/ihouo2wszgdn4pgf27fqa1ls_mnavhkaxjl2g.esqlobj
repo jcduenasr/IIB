@@ -1,0 +1,9 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE idProducto CHARACTER;
+		SET idProducto = InputLocalEnvironment.HTTP.Input.QueryString.productId;
+		
+		SET OutputLocalEnvironment.Destination.HTTP.RequestURL = iib:getUserDefinedProperty;
+		SET OutputLocalEnvironment.Destination.HTTP.QueryString.id = idProducto;
+	END;
+
