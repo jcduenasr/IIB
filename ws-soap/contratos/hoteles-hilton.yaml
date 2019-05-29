@@ -29,9 +29,10 @@ paths:
             $ref: '#/definitions/BookingRequest'
       responses:
         '200':
-          description: Status of the booking request
+          description: 'true'
           schema:
-            $ref: '#/definitions/BookingResponse'
+            type: boolean
+            example: true
         '500':
           description: Internal server error
   /hilton/rooms:
@@ -81,10 +82,9 @@ paths:
           type: string
       responses:
         '200':
-          description: 'true'
+          description: Status of the booking request
           schema:
-            type: boolean
-            example: true
+            $ref: '#/definitions/Room'
         '500':
           description: Internal server error
 definitions:
@@ -121,10 +121,6 @@ definitions:
         example: '2019-05-20'
         description: Checkin date in ISO format
     description: Class representing the request to be done for booking a room.
-  BookingResponse:
-    type: boolean
-    example: true
-      
   Hotel:
     type: object
     properties:
